@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont{
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+            gap: 20px;
+        }
+        #cont>div{
+            margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        img{
+             margin-top: 10px; 
+            margin-left: 10px;
+            /* width: 75%; */
+            text-align: center;
+        }
+        #p3{
+            background-color: aquamarine;
+            color: cadetblue;
+            text-align: center;
+        }
+        h3,p{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+            color: rgb(139, 139, 8);
+            margin-left: 118px;
+        }
+        #errimg{
+            /* width: 95%; */
+            width: 300%;
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+        button,input{
+            padding: 10px 10px;
+            margin: auto;
+            text-align: center;
+            margin: 25px -437px 2px 459px;
+            background: floralwhite
+        }   
+        
+    </style>
+</head>
+<body>
+   
+    <input type="text" placeholder="Enter Movie Name" id="input">
+    <button onclick="showmovies()">Search</button>
+    <div id="cont"></div>
+    <div id="foot"></div>
+</body>
+</html>
+<script src="/index.js"></script>
